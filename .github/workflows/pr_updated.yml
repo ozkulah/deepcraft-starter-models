@@ -1,13 +1,13 @@
-name: Start Pipeline
+name: PR Updated
 
 on:
   pull_request_target:
-    branches: 
-    - main
+    branches:
+      - main
 
 jobs:
-  build:
-    runs-on: windows-latest
+  start_pipeline:
+    runs-on: ubuntu-latest
     steps:
       - name: Start Pipeline
         env:
