@@ -9,14 +9,6 @@ on:
       branch:
         description: 'PR Branch'
         required: true
-  workflow_call:
-    inputs:
-      user:
-        type: string
-        required: true
-      branch:
-        type: string
-        required: true
 
 jobs:
   start_pipeline:
