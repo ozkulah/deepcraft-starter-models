@@ -3,11 +3,8 @@ name: Start Pipeline
 on:
   workflow_dispatch:
     inputs:
-      user:
-        description: 'PR User'
-        required: true
-      branch:
-        description: 'PR Branch'
+      pr_head:
+        description: 'PR Head (<user>:<branhc>)'
         required: true
 
 jobs:
@@ -21,8 +18,7 @@ jobs:
         name: Start Pipeline
         env:
           STARTER_MODELS_PIPELINE_TOKEN: ${{ secrets.STARTER_MODELS_PIPELINE_TOKEN }}
-          PR_USER: ${{ github.event.inputs.user }}
-          PR_BRANCH: ${{ github.event.inputs.branch }}
+          PR_HEAD: ${{ github.event.inputs.pr_head }}
         with:
           script: |
             import json
@@ -32,8 +28,7 @@ jobs:
             token = os.environ['STARTER_MODELS_PIPELINE_TOKEN']
             if not token:
                 raise Exception('Token is missing')
-            user = os.environ['PR_USER']
-            branch = os.environ['PR_BRANCH']
+            user, _, branch = os.environ['PR_HEAD'].partition(':')
             response = requests.post(
                 url='https://api.bitbucket.org/2.0/repositories/Imagimob/_starter-projects-pipeline/pipelines',
                 headers={
