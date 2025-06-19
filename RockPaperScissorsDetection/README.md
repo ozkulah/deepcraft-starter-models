@@ -19,7 +19,7 @@ Users can further expand this project by traininig their own models, importing n
 
 ## Contents
 
-- **`Data`**: Contains data derived from the [RPS dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw) for training and testing the model.
+- **`Data`**: Contains data (7333 rgb images) derived from the [RPS dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw) for training and testing the model.
 
 - **`Models`**: Stores the trained YOLO-based model and its quantized versions, prepared for deployment.
 
@@ -36,9 +36,13 @@ Users can further expand this project by traininig their own models, importing n
    5. Perform the gestures and observe detection from live camera.
    
 ## Adding more data
-You can add more data to the project following the steps below to improve the existing gestures or to include new ones.
- 1. Use `Object Detection Data Collection Graph UX` template to collect and label gesture data.
- 2. Import data to your project and retrain to get an updated model.
+- You can collect more data to the project following the steps below to improve the existing gestures or to include new ones.
+	 1. Use `Object Detection Data Collection Graph UX` template to collect and label gesture data.
+	 2. Import data to your project and retrain to get an updated model.
+- You can bring data from other sources.
+	 1. Import data to your project and label images if necessary.
+	  
+	Note: This project contains rgb format images, so new data should have rgb format.
 
 ## Steps to production
 The recommended path to production for this project includes the following steps:
