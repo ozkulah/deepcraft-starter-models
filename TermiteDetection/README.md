@@ -10,7 +10,6 @@ The termite object detection model is YOLO-based and it can be used in applicati
 - **House/gardens maintenance**
 
 Users can further expand this project by traininig their own models, importing new data, and evaluating performance using the provided tools.
-
 			 
 ## Features
 
