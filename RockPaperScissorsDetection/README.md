@@ -2,21 +2,20 @@
 
 ## Overview
 
-The **Rock, Scissors, Paper Detection Project** is a real-time gesture recognition system powered by a YOLO-based backend for detecting and classifying hand gestures. The project aims to build a robust end-to-end system that identifies rock, scissors, and paper gestures from live video input and determines the outcomes based on the game's rules.
+The **Rock, Scissors, Paper Detection Project** is a real-time gesture recognition system powered by a YOLO-based backend for detecting and classifying hand gestures. The project aims to build a robust end-to-end system that identifies rock, scissors, and paper gestures from live video input.
 
-This project highlights the efficient integration of advanced object detection techniques with interactive applications, making it ideal for:
+This project allows the user to build object detection models that can be used in interactive applications, making it ideal for:
 - **Educational purposes**
 - **AI-powered games**
 - **Gesture-controlled systems**
 
-Users can further enhance the system by training their own models, importing new data, and evaluating performance using the provided tools.
+Users can further expand this project by traininig their own models, importing new data, and evaluating performance using the provided tools.
 
 ## Features
 
-1. **Real-Time Gesture Detection**: The system uses a YOLO-based backend to detect and classify gestures accurately and in real-time.
-2. **Outcome Prediction**: Automatically determines game outcomes (win/lose/draw) based on the detected gestures.
-3. **Custom Data Integration**: Users can add new data through the data import or data collection tools and label their own data for model training.
-4. **Model Evaluation**: Evaluate trained models by providing the path to a `.tflite` file, using the tools available in the `Tools` folder.
+1. **Real-Time Gesture Detection**: The project uses a YOLO-based model to detect and classify gestures accurately and in real-time.   
+2. **Custom Data Integration**: Users can add new data through the data import or using `Object Detection Data Collection Graph UX` template and label their own data for model training.
+3. **Model Evaluation**: Evaluate trained models by providing the path to a `.tflite` file, using the model evaluation object detection available in the `Tools` folder.
 
 ## Contents
 
@@ -28,27 +27,24 @@ Users can further enhance the system by training their own models, importing new
   - Input a trained `.tflite` model.
   - Visualize and analyze the performance of the model.
 
-## Getting Started
+## Steps to get started: Model Traning and Evaluation
+  
+   1. Train the YOLO-based model using the provided dataset or custom data.
+   2. Download the trained model `.tflite` file from trained job. 
+   3. Add downloaded tflite model path in the **Model Evaluation Object Detection Graph UX** in the `Tools` folder.
+   4. Run the Graph UX project to evaluate model performance in real time using selected camera.
+   5. Perform the gestures and observe detection from live camera.
+   
+## Adding more data
+You can add more data to the project following the steps below to improve the existing gestures or to include new ones.
+ 1. Use `Object Detection Data Collection Graph UX` template to collect and label gesture data.
+ 2. Import data to your project and retrain to get an updated model.
 
-1. **Model Training and Evaluation**:
-   - Train the YOLO-based model using the provided dataset or custom data.
-   - Download the trained model `.tflite` file from trained job.
-   - Use the **Model Evaluation Graph** in the `Tools` folder to evaluate the model's accuracy and effectiveness.
+## Steps to production
+The recommended path to production for this project includes the following steps:
+- Add more data for gestures with low detection rate.
+- Add negative data to make  gesture detections robust against non relevant hand movements.
+- Try different augmentation settings to increase the variablity of the dataset, such as increase 'flip left right' and 'flip up down' parameters to get mirrored images of gestures.
+- Try different advanced settings such as optimizer,  iou threshold or confidence threshold to make model more or less sensitive. 
 
-2. **Data Collection and Labeling**:
-   - Use Data collection graphUx Template to collect and label gesture data if needed.
-   - Incorporate labeled data into the training pipeline to improve the model.
 
-3. **Deploy and Test**:
-   - Use the trained model on live video input for real-time detection.
-   - Observe gesture detection and automated game outcome predictions.
-
-## Future Enhancements
-
-- Add support for additional gestures and rules to expand beyond "rock, scissors, paper."
-- Optimize the model for faster performance on edge devices.
-- Automate parts of the data collection and labeling process for user convenience.
-
----
-
-This project provides a hands-on experience with gesture recognition using advanced computer vision techniques, offering a fun and interactive way to explore AI-based applications.
