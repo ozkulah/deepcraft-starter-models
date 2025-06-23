@@ -9,7 +9,7 @@ The termite object detection model is YOLO-based and it can be used in applicati
 - **Biology research: Termites population and/or species count**
 - **House/gardens maintenance**
 
-Users can further expand this project by traininig their own models, importing new data, and evaluating performance using the provided tools.
+Users can further expand this project by training their own models, importing new data, and evaluating performance using the provided tools.
 			 
 ## Features
 
@@ -33,7 +33,7 @@ Users can further expand this project by traininig their own models, importing n
   - Visualize and analyze the performance of the model.
 
 
-## Steps to get started: Model Traning and Evaluation
+## Steps to get started: Model Training and Evaluation
   
    1. Train the YOLO-based model using the provided dataset or custom data.
    2. Download the trained model `.tflite` file from trained job. 
@@ -52,5 +52,5 @@ The recommended path to production for this project includes the following steps
 - Add more data for termite if detection rate is low.
 - Add more classes like other insects to be detected
 - Add negative data to make termite detections robust against non relevant objects like other, similar insects.
-- Try different augmentation settings to increase the variablity of the dataset, such as increase 'flip left right' and 'flip up down' parameters to get mirrored images of termites.
+- Try different augmentation settings to increase the variability of the dataset, such as increase 'flip left right' and 'flip up down' parameters to get mirrored images of termites.
 - Try different advanced settings such as optimizer,  iou threshold or confidence threshold to make model more or less sensitive.
