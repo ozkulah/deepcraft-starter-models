@@ -9,7 +9,7 @@ This project allows the user to build object detection models that can be used i
 - **AI-powered games**
 - **Gesture-controlled systems**
 
-Users can further expand this project by traininig their own models, importing new data, and evaluating performance using the provided tools.
+Users can further expand this project by training their own models, importing new data, and evaluating performance using the provided tools.
 
 ## Features
 
@@ -27,7 +27,7 @@ Users can further expand this project by traininig their own models, importing n
   - Input a trained `.tflite` model.
   - Visualize and analyze the performance of the model.
 
-## Steps to get started: Model Traning and Evaluation
+## Steps to get started: Model Training and Evaluation
   
    1. Train the YOLO-based model using the provided dataset or custom data.
    2. Download the trained model `.tflite` file from trained job. 
@@ -48,7 +48,7 @@ Users can further expand this project by traininig their own models, importing n
 The recommended path to production for this project includes the following steps:
 - Add more data for gestures with low detection rate.
 - Add negative data to make  gesture detections robust against non relevant hand movements.
-- Try different augmentation settings to increase the variablity of the dataset, such as increase 'flip left right' and 'flip up down' parameters to get mirrored images of gestures.
+- Try different augmentation settings to increase the variability of the dataset, such as increase 'flip left right' and 'flip up down' parameters to get mirrored images of gestures.
 - Try different advanced settings such as optimizer,  iou threshold or confidence threshold to make model more or less sensitive. 
 
 
