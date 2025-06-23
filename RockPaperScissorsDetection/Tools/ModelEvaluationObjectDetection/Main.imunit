@@ -14,8 +14,8 @@
         <StringArgument param="source_id">Source#0@\\?\USB#VID_0408&amp;PID_545A&amp;MI_00#6&amp;2703a037&amp;0&amp;0000#{e5323777-f976-4f5b-9b55-b94699c46e44}\GLOBAL</StringArgument>
       </UnitNode>
       <UnitNode id="node_5" x="801.1049999999998" y="673.5312945544051" enabled="true" name="Model" unit="Imaginet.Units.TensorFlowLite.TfLiteModel">
-        <StringArgument param="file_path">C:/Users/OezkulA/Desktop/RPS_upload/RockPaperScissorsDetection/Models/model/model_int8.tflite</StringArgument>
-        <Int32Argument param="model_arena_size">10000</Int32Argument>
+        <StringArgument param="file_path"></StringArgument>
+        <Int32Argument param="model_arena_size"></Int32Argument>
       </UnitNode>
       <UnitNode id="node_4" x="1164.5783333333331" y="667.5799999999999" enabled="true" unit="Imaginet.Units.Signal.DetectionFilter" />
     </Nodes>
