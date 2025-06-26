@@ -42,7 +42,7 @@
     </BuildSteps>
   </ModelFactory>
   <Models>
-    <Model name="conv2d-medium-balanced-0" id="eaf16147-bb65-4918-9f07-c52d479f135a">
+    <Model name="conv2d-medium-balanced-0" id="c9490865-9c88-4262-960a-e06ba738dfba">
       <LossFunction>CategoricalCrossentropy</LossFunction>
       <Epochs>100</Epochs>
       <BatchSize>16</BatchSize>
@@ -149,7 +149,7 @@
       </Preprocessor>
       <Postprocessor override="False" inshape="[128,3]" intype="Float32" infreq="0" outshape="[10]" outtype="Float32" />
     </Model>
-    <Model name="conv2d-medium-balanced-1" id="49e6cc5c-c036-41ba-9112-b8d4db5be012">
+    <Model name="conv2d-medium-balanced-1" id="6384bccd-d87f-4cd6-8db4-e885d4d7a469">
       <LossFunction>CategoricalCrossentropy</LossFunction>
       <Epochs>100</Epochs>
       <BatchSize>16</BatchSize>
@@ -256,7 +256,7 @@
       </Preprocessor>
       <Postprocessor override="False" inshape="[128,3]" intype="Float32" infreq="0" outshape="[10]" outtype="Float32" />
     </Model>
-    <Model name="conv2d-medium-balanced-2" id="70b66755-9347-472a-805a-7010ed3511e4">
+    <Model name="conv2d-medium-balanced-2" id="ca1416a5-589c-4ef9-b871-a269e7bab5b9">
       <LossFunction>CategoricalCrossentropy</LossFunction>
       <Epochs>100</Epochs>
       <BatchSize>16</BatchSize>
@@ -363,7 +363,7 @@
       </Preprocessor>
       <Postprocessor override="False" inshape="[128,3]" intype="Float32" infreq="0" outshape="[10]" outtype="Float32" />
     </Model>
-    <Model name="conv2d-medium-balanced-3" id="d85bd2d1-2064-47ab-bf83-c39b8d9f6f6e">
+    <Model name="conv2d-medium-balanced-3" id="c5801c46-f284-4928-9bb4-91180f17aff0">
       <LossFunction>CategoricalCrossentropy</LossFunction>
       <Epochs>100</Epochs>
       <BatchSize>16</BatchSize>
